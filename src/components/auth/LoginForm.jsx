@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { login } from '../../api/auth'
-import Input from '../ui/input'
+import Input from '../ui/Input.jsx'
 import mailIcon from '../../assets/mail.svg'
 import pwIcon  from '../../assets/pw.svg'
 
