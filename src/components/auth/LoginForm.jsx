@@ -17,7 +17,7 @@ export default function LoginForm() {
     try {
       const res = await login({ email, password })
       localStorage.setItem('token', res.data.token)
-      navigate('/dashboard')
+      navigate('/home')
     } catch (err) {
       alert('Pogrešni podaci')
     }
@@ -32,7 +32,7 @@ export default function LoginForm() {
         <Input icon={mailIcon} alt={'mailIcon'} type={'email'} value={email} onChange={e => setEmail(e.target.value)} placeholder={'nikola@nrt-media.com'} />
         <Input icon={pwIcon} alt={'passwordIcon'} type={'password'} value={password} onChange={e => setPassword(e.target.value)} placeholder={'••••••••'} />
         <a href='#'>Zaboravili ste lozinku?</a>
-        <button type="submit">Ulogujte se</button>
+        <button type="submit" className='login'>Ulogujte se</button>
     </form>
     </>
   )

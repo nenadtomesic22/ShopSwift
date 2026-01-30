@@ -1,0 +1,97 @@
+.userInfo {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 280px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0px 10px 5px rgba(0,0,0,0.2);
+  padding-block: 20px;
+}
+
+.userWrapp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding-inline: 4px 10px;
+    height: 36px;
+    border-radius: 5px;
+    margin-inline: 20px;
+}
+
+.store {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.store p {
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#checkMark {
+    height: 10px;
+}
+
+.divider {
+    height: 1px;
+    background-color: #DEDEDE;
+    width: 100%;
+    margin-block: 20px;
+}
+
+.supportLinks {
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.supportLinks li {
+    padding: 0;
+}
+
+.supportLinks li a {
+    color: rgba(0,0,0,0.8);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-inline: 20px;
+}
+
+.userLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.userLinks p {
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.userLinks span {
+    color: rgba(0,0,0,0.4);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.user .logout {
+    color: rgba(0,0,0,0.8);
+    font-weight: 400;
+    font-size: 14px;
+    border: 0;
+    background-color: transparent;
+    text-align: left;
+    cursor: pointer;
+}

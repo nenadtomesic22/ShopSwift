@@ -91,7 +91,7 @@ a {
   align-self: flex-end;
 }
 
-button {
+.login {
   height: 54px;
   padding-block: 16px;
   font-size: 18px;
