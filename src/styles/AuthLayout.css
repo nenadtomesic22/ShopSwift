@@ -102,6 +102,7 @@ a {
   background-color: #42855B;
   border-radius: 6px;
   border: 1px solid #42855B;
+  cursor: pointer;
 }
 
 .logo {

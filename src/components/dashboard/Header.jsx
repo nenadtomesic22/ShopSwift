@@ -17,7 +17,7 @@ export default function Header(User) {
 
     return (
         <div className='NavBar'>
-            <img src={Logo} alt="Logo" />
+            <img src={Logo} alt="Logo" onClick={e => {window.location.reload()}} />
             <div className="avatar"  onClick={e => { e.stopPropagation(); setMenuOpen(prev => !prev)}}>
                 <p>{User}</p>
                 <a href="#" id='avatar'><img src={Avatar} alt="avatar" /></a>

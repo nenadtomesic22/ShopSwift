@@ -1,9 +1,16 @@
 import './UserInfo.css'
+import { useNavigate } from 'react-router-dom'
 import avatar from '../../assets/avatar.svg'
 import checkMark from '../../assets/checkMark.svg'
 
 export default function UserInfo({isOpen}) {
-  if (!isOpen) return null;
+    const navigate = useNavigate()
+    if (!isOpen) return null;
+    
+    const handleLogout = () => {
+        localStorage.removeItem('token')
+        navigate('/login')
+    }
     return (
         <div className="userInfo" onClick={(e) => e.stopPropagation()}>
             <div className="userWrapp">
@@ -28,7 +35,7 @@ export default function UserInfo({isOpen}) {
                     <p>Jasmina Covic</p>
                     <span className="email">jasmina@orlando.com</span>
                 </div>
-                <button className="logout">Izlogujte se</button>
+                <button className="logout" onClick={handleLogout}>Izlogujte se</button>
             </div>
         </div>
   )

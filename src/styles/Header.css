@@ -15,6 +15,7 @@
 
 .NavBar img {
     height: 22px;
+    cursor: pointer;
 }
 
 .avatar {
@@ -25,6 +26,7 @@
     padding-inline: 10px 2px;
     border-radius: 5px;
     height: 32px;
+    cursor: pointer;
 }
 
 #avatar {

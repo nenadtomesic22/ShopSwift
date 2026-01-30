@@ -25,7 +25,7 @@ export default function LoginForm() {
 
   return (
     <>
-    <h1>Faruk Zelis</h1>
+    <h1>Ulogujte se</h1>
     <p>Unesite vase detalje da nastavite</p>
     <form onSubmit={handleSubmit}>
         
