@@ -12,6 +12,9 @@
     height: calc(100vh - 52px);
     width: 250px;
     background-color: #DEDEDE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 ul {
@@ -64,4 +67,16 @@ li a {
     border-radius: 2px;
     padding: 5px 7px;
     margin-left: auto;
+}
+
+.settings {
+    align-self: flex-start;
+    margin: 25px 30px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: 0;
+    color: rgba(000, 000, 000, .6);
+    font-size: 12px;
+    font-weight: 400;
 }

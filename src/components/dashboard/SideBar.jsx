@@ -4,6 +4,7 @@ import pocetna from '../../assets/pocetna.svg'
 import porudzbine from '../../assets/porudzbine.svg'
 import proizvodi from '../../assets/proizvodi.svg'
 import analitika from '../../assets/analitika.svg'
+import settings from "../../assets/settings.svg";
 
 export default function SideBar() {
     const [active, setActive] = useState("pocetna")
@@ -31,6 +32,7 @@ export default function SideBar() {
                 />
             ))}
             </ul>
+            <a href="#" className="settings"><img src={settings} alt="settings" />Podesavanja</a>
         </div>
     )
 }
