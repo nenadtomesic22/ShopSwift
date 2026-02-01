@@ -13,6 +13,11 @@
     height: 52px;
 }
 
+.logo {
+    margin: 0;
+    align-self: center;
+}
+
 .NavBar img {
     height: 22px;
     cursor: pointer;
