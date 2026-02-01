@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react'
+import { Link } from "react-router-dom";
 import Logo from '../../assets/Logo.svg'
 import Avatar from '../../assets/avatar.svg'
 import '../../styles/Header.css'
@@ -17,7 +18,7 @@ export default function Header(User) {
 
     return (
         <div className='NavBar'>
-            <img src={Logo} alt="Logo" onClick={e => {window.location.reload()}} />
+            <img src={Logo} alt="Logo" onClick={e => {<Link to='/login' />}} />
             <div className="avatar"  onClick={e => { e.stopPropagation(); setMenuOpen(prev => !prev)}}>
                 <p>{User}</p>
                 <a href="#" id='avatar'><img src={Avatar} alt="avatar" /></a>
