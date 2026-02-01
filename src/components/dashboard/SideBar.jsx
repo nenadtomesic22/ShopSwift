@@ -10,10 +10,10 @@ export default function SideBar() {
     const [active, setActive] = useState("pocetna")
     
     const items = [
-        {id: "pocetna", label: "Početna", icon: pocetna},
-        {id: "porudzbine", label: "Porudžbine", icon: porudzbine, badge: 3},
-        {id: "proizvodi", label: "Proizvodi", icon: proizvodi},
-        {id: "analitika", label: "Analitika", icon: analitika},
+        {id: "pocetna", label: "Početna", icon: pocetna, to: '/home'},
+        {id: "porudzbine", label: "Porudžbine", icon: porudzbine, to: '/orders', badge: 3},
+        {id: "proizvodi", label: "Proizvodi", icon: proizvodi, to: '/home'},
+        {id: "analitika", label: "Analitika", icon: analitika, to: '/home'},
     ];
     
     return (
@@ -22,7 +22,7 @@ export default function SideBar() {
             {items.map(item => (
                 <Li
                 key={item.id}
-                href="#"
+                to={item.to}
                 className={active === item.id ? "active" : ""}
                 icon={item.icon}
                 alt={item.id}

@@ -75,7 +75,7 @@ li a {
     display: flex;
     align-items: center;
     gap: 8px;
-    text-decoration: 0;
+    text-decoration: none;
     color: rgba(000, 000, 000, .6);
     font-size: 12px;
     font-weight: 400;

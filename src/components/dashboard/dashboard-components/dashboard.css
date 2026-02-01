@@ -70,6 +70,10 @@
     color: #000;
 }
 
+.ordersTable .card {
+    /* overflow: hidden; */
+}
+
 .ordersTable h3 {
     font-size: 16px;
     font-weight: 600;
@@ -78,6 +82,11 @@
 
 .ordersTable .badge {
     padding-block: 3px;
+}
+
+.table-wrapper {
+    max-height: 250px;
+    overflow-y: auto;   /* ⬅️ SAMO OVDE scroll */
 }
 
 table {
@@ -90,7 +99,8 @@ thead th {
     text-align: left;
     position: sticky;
     top: 0;
-    background-color: rgba(000, 000, 000, .05);
+    z-index: 2;
+    background-color: #F2F2F2;
     padding: 10px 12px;
     color: #000;
     font-weight: 500;
