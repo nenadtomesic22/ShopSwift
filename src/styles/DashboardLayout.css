@@ -10,7 +10,7 @@
 
 .SideBar {
     height: calc(100vh - 52px);
-    width: 250px;
+    min-width: 250px;
     background-color: #DEDEDE;
     display: flex;
     flex-direction: column;
@@ -79,4 +79,9 @@ li a {
     color: rgba(000, 000, 000, .6);
     font-size: 12px;
     font-weight: 400;
+}
+
+.content {
+    width: 100%;
+    background-color: #F2F2F2;
 }

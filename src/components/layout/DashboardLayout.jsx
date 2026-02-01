@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router-dom'
 import '../../styles/DashboardLayout.css'
 import Header from '../dashboard/Header'
 import SideBar from '../dashboard/SideBar'
@@ -9,7 +10,7 @@ export default function DashboardLayout({ children }) {
       <div className="layout-body">
         <SideBar />
         <main className="content">
-          {children}
+          <Outlet />
         </main>
       </div>
     </div>
