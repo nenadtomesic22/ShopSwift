@@ -72,6 +72,13 @@ li {
     line-height: 22px;
 }
 
+.li-link img {
+    opacity: .6;
+}
+
+.li-link.active img {
+    opacity: 1;
+}
 
 .badge {
     background: #42855B;

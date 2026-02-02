@@ -58,6 +58,7 @@
     flex-direction: column;
     gap: 12px;
     width: 590px;
+    border: 1px solid #DEDEDE;
 }
 
 .orderAction .articles {
@@ -94,6 +95,12 @@
     padding-block: 20px;
 }
 
+.orderGrid .left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .orderCustomer {
     padding: 8px 20px 20px 20px;
     display: flex;
@@ -101,6 +108,7 @@
     background-color: #fff;
     border-radius: 10px;
     width: 260px;
+    border: 1px solid #DEDEDE;
 }
 
 .orderCustomer h4 {
@@ -152,4 +160,75 @@
 .article .articleHeading img {
     height: 44px;
     width: 44px;
+}
+
+.orderSummary {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #DEDEDE;
+}
+
+.method {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 6px;
+    background-color: #DEDEDE;
+    width: fit-content;
+    padding: 8px 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+
+.summaryCard {
+  border: 1px solid #DEDEDE;
+  border-radius: 5px;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.summaryCard .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.summaryCard span {
+  color: #000;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.summaryCard .label {
+    display: flex;
+    width: 80%;
+}
+
+.summaryCard .label span:first-child {
+    width: 35%;
+}
+
+.summaryCard .label span:last-child {
+    width: 65%;
+}
+
+.summaryCard .price {
+    text-align: right;
+}
+
+.summaryCard .row.total span {
+    font-weight: 600;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #DEDEDE;
+  margin: 6px 0;
 }

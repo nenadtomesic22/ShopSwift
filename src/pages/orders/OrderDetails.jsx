@@ -5,6 +5,7 @@ import StatusBadge from '../../components/ui/StatusBadge';
 import ordersList from '../../data/ordersList.js'
 import articles from '../../data/articlesList.js'
 import OrderAction from '../../components/dashboard/orderDetails/OrderAction';
+import OrderSummary from '../../components/dashboard/orderDetails/OrderSummary';
 import OrderCustomer from '../../components/dashboard/orderDetails/OrderCustomer';
 import '../../styles/orderDetails.css'
 
@@ -40,6 +41,7 @@ export default function OrderDetails() {
             <div className="orderGrid">
                 <div className="left">
                     <OrderAction />
+                    <OrderSummary />
                 </div>
                 <div className="right">
                     <OrderCustomer />
