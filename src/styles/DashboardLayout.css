@@ -4,17 +4,27 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #F2F2F2;
+}
+
 .layout-body {
     display: flex;
+    position: relative;
+    min-height: calc(100vh - 52px);
+    top: 52px;
 }
 
 .SideBar {
     height: calc(100vh - 52px);
+    top: 52px;
     min-width: 250px;
     background-color: #DEDEDE;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: fixed;
+    z-index: 900;
 }
 
 ul {
@@ -91,5 +101,4 @@ li a {
 
 .content {
     width: 100%;
-    background-color: #F2F2F2;
 }

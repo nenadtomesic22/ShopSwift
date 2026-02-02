@@ -11,6 +11,9 @@
     background-color: #000;
     padding-inline: 20px;
     height: 52px;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
 }
 
 .NavBar .logo {
