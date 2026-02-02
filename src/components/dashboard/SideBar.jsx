@@ -5,7 +5,7 @@ import porudzbine from '../../assets/porudzbine.svg'
 import proizvodi from '../../assets/proizvodi.svg'
 import analitika from '../../assets/analitika.svg'
 import settings from "../../assets/settings.svg";
-import ordersList from '../../../../ordersList'
+import ordersList from '../../../../ordersList.js'
 
 export default function SideBar() {
     const [active, setActive] = useState("pocetna")

@@ -1,6 +1,6 @@
 import './dashboard.css'
 import Order from '../../ui/Order'
-import ordersList from '../../../../../ordersList'
+import ordersList from '../../../../../ordersList.js'
 
 export default function OrdersTable() {
     
