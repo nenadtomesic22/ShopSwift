@@ -131,8 +131,17 @@ td:first-child {
 
 tbody tr {
     border-bottom: 1px solid rgba(000, 000, 000, .05);
+    cursor: pointer;
 }
 
 tbody tr:last-child {
     border-bottom: 0;
+}
+
+.emptyState {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: rgba(000, 000, 000, .4);
+    margin: 0;
 }
