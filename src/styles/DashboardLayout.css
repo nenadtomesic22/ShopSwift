@@ -39,39 +39,29 @@ ul {
 
 li {
     display: flex;
-    padding: 7px;
     border-radius: 5px;
+    list-style: none;
 }
 
-li.active {
+.li-link.active {
     background-color: #F2F2F2;
-}
-
-li.active a {
+    border-radius: 6px;
     color: #000;
 }
 
-li a {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    align-self: center;
-    gap: 8px;
-    color: rgba(000, 000, 000, .6);
-    margin-bottom: 0;
-    font-weight: 500;
-    font-size: 12px;
-    width: 100%;
-    line-height: 22px;
-}
-
 .li-link {
-    display: flex;          /* ili block */
+    display: flex;          
     align-items: center;
+    gap: 8px;
     width: 100%;
     height: 100%;
+    font-weight: 500;
+    font-size: 12px;
     text-decoration: none;
-    color: inherit;
+    color: rgba(000, 000, 000, .6);
+    margin-bottom: 0;
+    padding: 7px;
+    line-height: 22px;
 }
 
 

@@ -1,5 +1,11 @@
-export default function Dashboard() {
+import OrdersStats from './dashboard/orders/OrdersStats'
+import OrdersDashboardTable from './dashboard/orders/OrdersDashboardTable'
+
+export default function OrdersDashboard() {
     return (
-        <h1>Orders Dashboard</h1>
+        <div className="dashboard_container">
+            <OrdersStats />
+            <OrdersDashboardTable />
+        </div>
     )
 }

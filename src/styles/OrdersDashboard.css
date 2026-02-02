@@ -1,0 +1,96 @@
+.ordersStats, .ordersDashboardTable {
+    width: 1150px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ordersStats .stats_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.ordersStats .stats_col {
+    border-right: 1px solid #DEDEDE;
+    padding: 20px;
+}
+
+.ordersStats .stats_col:last-child {
+    border: 0;
+}
+
+#create_order {
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: 10px 18px;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+
+#create_order:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.ordersDashboardTable td {
+    padding-block: 15px;
+}
+
+.ordersDashboardTable .table-wrapper {
+    max-height: 299px;
+}
+
+.statusBadge {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.statusBadge p {
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0;
+}
+
+.statusBadge.pending {
+    background-color: #FFE89B;
+}
+
+.statusBadge span {
+    height: 8px;
+    width: 8px;
+    border-radius: 3px;
+}
+
+.pending span {
+    border: 1px solid #FFC60B;
+}
+
+.done span {
+    border: 1px solid #42855B;
+}
+
+.statusBadge.pending p {
+    color: #FFC60B;
+}
+
+.statusBadge.done {
+    background-color: #8BB89C;
+}
+
+.statusBadge.done p {
+    color: #42855B;
+
+}
