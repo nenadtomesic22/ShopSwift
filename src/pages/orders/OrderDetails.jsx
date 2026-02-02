@@ -33,7 +33,7 @@ export default function OrderDetails() {
                         <h3>#{orderId}</h3>
                         <StatusBadge status={order.status}></StatusBadge>
                     </div>
-                    <p>Poslednje ažuriranje: Sreda 31.01.2024 u 10:20</p>
+                    <p id='orderTime'>Vreme porudžbine: Sreda 31.01.2024 u 10:20</p>
                 </div>
                 
                 <button className="remove">Obriši</button>

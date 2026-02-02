@@ -7,25 +7,25 @@ export default function OrderCustomer() {
             <div className="customer_wrapp">
                 <h4>Kupac</h4>
                 <div className="customer">
-                    <p>Pedja Bulatiović</p>
-                    <p>1 porudžbina</p>
+                    <p className="customerText">Pedja Bulatiović</p>
+                    <p className="customerText">1 porudžbina</p>
                 </div>
             </div>
             <div className="contact_details_wrapp">
                 <h4>Kontakt detalji</h4>
                 <div className="contact_details">
-                    <p>valkary@gmail.com</p>
-                    <p>+381643696560</p>
+                    <p className="customerText">valkary@gmail.com</p>
+                    <p className="customerText">+381643696560</p>
                 </div>
             </div>
             <div className="delivery_details_wrapp">
                 <h4>Detalji za dostavu</h4>
                 <div className="delivery_details">
-                    <p>Pedja Bulatiović</p>
-                    <p>JNA 31</p>
-                    <p>26220 Kovin</p>
-                    <p>Srbija</p>
-                    <p>+381643696560</p>
+                    <p className="customerText">Pedja Bulatiović</p>
+                    <p className="customerText">JNA 31</p>
+                    <p className="customerText">26220 Kovin</p>
+                    <p className="customerText">Srbija</p>
+                    <p className="customerText">+381643696560</p>
                 </div>
             </div>
         </div>

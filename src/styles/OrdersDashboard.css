@@ -49,51 +49,13 @@ h3 {
     max-height: 299px;
 }
 
-.statusBadge {
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    padding: 5px 10px;
-    border-radius: 4px;
-}
 
-.statusBadge p {
-    font-weight: 400;
-    font-size: 12px;
-    margin: 0;
-}
 
-.statusBadge.pending {
-    background-color: #FFE89B;
-}
 
-.statusBadge span {
-    height: 8px;
-    width: 8px;
-    border-radius: 3px;
-}
-
-.pending span {
-    border: 1px solid #FFC60B;
-}
-
-.done span {
-    border: 1px solid #42855B;
-}
-
-.statusBadge.pending p {
-    color: #FFC60B;
-}
-
-.statusBadge.done {
-    background-color: #8BB89C;
-}
-
-.statusBadge.done p {
-    color: #42855B;
-}
 
 .ordersStats .stats_col span {
     font-size: 20px;
 }
+
+
+

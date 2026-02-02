@@ -38,16 +38,15 @@
     cursor: pointer;
 }
 
-.orderDetails .orderHeadings .orderInfo p {
+#orderTime {
     color: rgba(000, 000, 000, .6);
     margin: 0;
     font-weight: 400;
     font-size: 10px;
 }
 
-#black {
-    color: #000;
-    margin: 0;
+#orderTime {
+    padding-left: 28px;
 }
 
 .orderAction {
@@ -71,6 +70,9 @@
 .orderAction .articles .article {
     padding: 12px;
     border-bottom: 1px solid #DEDEDE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
 }
 
 .orderAction .articles .article:last-child {
@@ -117,7 +119,7 @@
     font-size: 14px;
 }
 
-.orderCustomer p {
+.orderCustomer .customerText {
     color: #000;
     font-weight: 400;
     font-size: 12px;
@@ -142,24 +144,40 @@
     gap: 6px;   
 }
 
-.article {
-    display: flex;
-    justify-content: space-between;
-}
-
-.article p {
-    color: #000;
-    margin: 0;
-}
-
 .article .articleHeading {
     display: flex;
     gap: 12px;
 }
 
+.article .articleHeading h4 {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.article .articleHeading p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+}
+
+.article .articlePricing p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+    margin: 0;
+}
+
 .article .articleHeading img {
     height: 44px;
     width: 44px;
+}
+
+.article .articleHeading .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
 }
 
 .orderSummary {

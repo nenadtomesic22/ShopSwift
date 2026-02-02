@@ -1,0 +1,44 @@
+.statusBadge {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.statusBadge .text {
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0;
+}
+
+.statusBadge.pending {
+    background-color: #FFE89B;
+}
+
+.statusBadge span {
+    height: 8px;
+    width: 8px;
+    border-radius: 3px;
+}
+
+.statusBadge.pending .text {
+    color: #FFC60B;
+}
+
+.statusBadge.done {
+    background-color: #8BB89C;
+}
+
+.statusBadge.done .text {
+    color: #42855B;
+}
+
+.pending span {
+    border: 1px solid #FFC60B;
+}
+
+.done span {
+    border: 1px solid #42855B;
+}
