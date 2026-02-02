@@ -29,7 +29,7 @@ body.dashboard-body {
 
 .content {
     margin-left: 250px;
-    min-height: 100vh;
+    min-height: calc(100vh - 52px);
     width: 100%;
     display: flex;
     justify-content: center;

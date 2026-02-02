@@ -16,17 +16,12 @@ export default function OrderDetails() {
     if (!order) return <NotFound />;
 
     const orderArticles = order.articles.map(orderItem => {
-  const article = articles.find(a => a.id === orderItem.id);
-  return {
-    ...article,
-    quantity: orderItem.quantity
-  };
-});
-console.log(orderArticles[0]);
-
-
-    
-    
+        const article = articles.find(a => a.id === orderItem.id);
+        return {
+            ...article,
+            quantity: orderItem.quantity
+        };
+    }); 
 
     return (
         <div className="orderDetails">
