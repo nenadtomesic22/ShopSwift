@@ -8,8 +8,13 @@ export default function OrdersTable() {
 
     return (
         <div className="ordersTable">
-            
-            <h3>Porudžbine za ispuniti <span className='badge'>{badge}</span></h3>
+            {badge === 0 ? (
+                <h3>Porudžbine za ispuniti</h3>
+
+            ) : (
+
+                <h3>Porudžbine za ispuniti <span className='badge'>{badge}</span></h3>
+            )}
             <div className="card">
                 {ordersList.length === 0 ? (
                     <p className="emptyState">Trenutno nema porudžbina!</p>
