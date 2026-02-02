@@ -1,0 +1,128 @@
+.orderDetails {
+    width: 870px;
+    display: flex;
+    flex-direction: column;
+    padding-block: 40px;
+}
+
+.orderDetails .orderHeadings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orderDetails .orderHeadings .orderInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+.orderDetails .orderHeadings .orderInfo .row {
+    display: flex;
+    gap: 10px;
+}
+
+.orderDetails .orderHeadings .orderInfo .row img {
+    cursor: pointer;
+}
+
+.remove {
+    color: #000;
+    background-color: #DADADA;
+    border: 1px solid #DADADA;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.orderDetails .orderHeadings .orderInfo p {
+    color: rgba(000, 000, 000, .6);
+    margin: 0;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+#black {
+    color: #000;
+    margin: 0;
+}
+
+.orderAction {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 590px;
+}
+
+.orderAction .articles {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+}
+
+.orderAction .articles .article {
+    padding: 12px;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.orderAction .articles .article:last-child {
+    border-bottom: 0;
+}
+
+.markOrder {
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 18px;
+    margin-left: auto;
+}
+
+.orderCustomer {
+    padding: 8px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 260px;
+}
+
+.orderCustomer h4 {
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.orderCustomer p {
+    color: #000;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0;
+}
+
+.orderCustomer .customer_wrapp, .contact_details_wrapp, .delivery_details_wrapp {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-block: 12px;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.delivery_details_wrapp {
+    border: 0;
+}
+
+.customer, .contact_details, .delivery_details {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;   
+}
