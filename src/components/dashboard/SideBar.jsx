@@ -5,13 +5,15 @@ import porudzbine from '../../assets/porudzbine.svg'
 import proizvodi from '../../assets/proizvodi.svg'
 import analitika from '../../assets/analitika.svg'
 import settings from "../../assets/settings.svg";
+import ordersList from '../../../../ordersList'
 
 export default function SideBar() {
     const [active, setActive] = useState("pocetna")
+    let badge = ordersList.length
     
     const items = [
         {id: "pocetna", label: "Početna", icon: pocetna, to: '/home'},
-        {id: "porudzbine", label: "Porudžbine", icon: porudzbine, to: '/orders', badge: 3},
+        {id: "porudzbine", label: "Porudžbine", icon: porudzbine, to: '/orders', badge: badge},
         {id: "proizvodi", label: "Proizvodi", icon: proizvodi, to: '/home'},
         {id: "analitika", label: "Analitika", icon: analitika, to: '/home'},
     ];
