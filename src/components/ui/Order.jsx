@@ -12,7 +12,7 @@ export default function Order({ id, to, date, customer, articles = [], total, st
                 <td>{articles.length} artikla</td>
                 <td>{total} RSD</td>
                 {showExtra && <td>{<StatusBadge status={status}/>}</td>}
-                {showExtra && delivery && <td>{delivery}</td>}
+                {showExtra && <td>{delivery === 0 ? 'PostExpress Besplatna' : `${delivery} RSD`}</td>}
         </tr>
     )
 }

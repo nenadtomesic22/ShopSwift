@@ -13,7 +13,7 @@ export default function Article({name,sku,price, quantity}) {
                 </div>
             </div>
             <div className="articlePricing">
-                <p className='total'><span className='articlePrice'>RSD {price}</span><span className='quantity'> x {quantity} </span> RSD {totalPrice}</p>
+                <p className='total'><span className='articlePrice'>RSD {price.toFixed(2)}</span><span className='quantity'> x {quantity} </span> RSD {totalPrice.toFixed(2)}</p>
             </div>
         </div>
     )

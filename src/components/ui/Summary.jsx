@@ -1,9 +1,8 @@
 import '../../styles/orderDetails.css'
 import method from '../../assets/method.svg'
 
-export default function Summary({itemsCount, subtotal}) {
+export default function Summary({itemsCount, subtotal, delivery}) {
     const pdv = subtotal * 0.2
-    const delivery = 0
     const total = subtotal + delivery
     return (
         <div className="orderSummary">
@@ -14,7 +13,7 @@ export default function Summary({itemsCount, subtotal}) {
                         <span>Predračun</span>
                         <span>{itemsCount} proizvoda</span>
                     </div>
-                    <span className="price">RSD {subtotal}</span>
+                    <span className="price">RSD {subtotal.toFixed(2)}</span>
                 </div>
 
                 <div className="row">
@@ -22,7 +21,7 @@ export default function Summary({itemsCount, subtotal}) {
                         <span>Dostava</span>
                         <span>PostExpress Besplatna</span>
                     </div>
-                    <span className="price">RSD {delivery}</span>
+                    <span className="price">RSD {delivery.toFixed(2)}</span>
                 </div>
 
                 <div className="row">

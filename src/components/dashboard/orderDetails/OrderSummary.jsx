@@ -20,6 +20,7 @@ export default function OrderSummary({order}) {
             key={order.id}
             itemsCount={itemsCount}
             subtotal={subtotal}
+            delivery={order.delivery}
         />
     )
 }
