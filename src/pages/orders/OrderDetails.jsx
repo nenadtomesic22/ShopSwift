@@ -33,18 +33,18 @@ export default function OrderDetails() {
                         <h3>#{orderId}</h3>
                         <StatusBadge status={order.status}></StatusBadge>
                     </div>
-                    <p id='orderTime'>Vreme porudžbine: Sreda 31.01.2024 u 10:20</p>
+                    <p id='orderTime'>Vreme porudžbine: {order.date}</p>
                 </div>
                 
                 <button className="remove">Obriši</button>
             </div>
             <div className="orderGrid">
                 <div className="left">
-                    <OrderAction />
-                    <OrderSummary />
+                    <OrderAction order={order}/>
+                    <OrderSummary order={order}/>
                 </div>
                 <div className="right">
-                    <OrderCustomer />
+                    <OrderCustomer order={order}/>
                 </div>
             </div>
 

@@ -1,13 +1,8 @@
-import { useParams } from 'react-router-dom'
 import '../../../styles/orderDetails.css'
 import articles from '../../../data/articlesList'
-import ordersList from '../../../data/ordersList.js'
 import Article from '../../ui/Article'
 
-export default function orderAction() {
-    const { orderId } = useParams()
-    const order = ordersList.find(order => order.id === Number(orderId));
-
+export default function OrderAction({order}) {
     if (!order) return <NotFound />;
 
         return (

@@ -1,13 +1,13 @@
 import '../../../styles/orderDetails.css'
 
 
-export default function OrderCustomer() {
+export default function OrderCustomer({order}) {
     return(
         <div className="orderCustomer">
             <div className="customer_wrapp">
                 <h4>Kupac</h4>
                 <div className="customer">
-                    <p className="customerText">Pedja Bulatiović</p>
+                    <p className="customerText">{order.customer}</p>
                     <p className="customerText">1 porudžbina</p>
                 </div>
             </div>

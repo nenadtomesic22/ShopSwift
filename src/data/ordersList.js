@@ -13,16 +13,16 @@ const orders = [
     // { id:1013, to:'#', date:'Sre, 31.01.2024 u 10:20', customer:'Nenad Tomešić', total:'3,793.99', status: true, delivery: 'PostExpress Besplatna'},
     // { id:1014, to:'#', date:'Sre, 31.01.2024 u 10:20', customer:'Nenad Tomešić', total:'3,793.99', status: true, delivery: 'PostExpress Besplatna'},
     // { id:1015, to:'#', date:'Sre, 31.01.2024 u 10:20', customer:'Nenad Tomešić', total:'3,793.99', status: true, delivery: 'PostExpress Besplatna'},
-    { id:10018, to:'/orders', date:'Sre, 31.01.2024 u 10:20', customer:'Nenad Tomešić', total:'3,793.99', status: false, delivery: 'PostExpress Besplatna', articles:[{ id: 1, quantity: 2 }, { id: 2, quantity: 1 }]},
-    { id:10020, to:'/orders', date:'Sre, 31.01.2024 u 10:20', customer:'Nenad Tomešić', total:'3,793.99', status: false, delivery: 'PostExpress Besplatna', articles:[{ id: 2, quantity: 2 }, { id: 2, quantity: 1 }]},
-    { id:10021, to:'/orders', date:'Sre, 31.01.2024 u 10:20', customer:'Nenad Tomešić', total:'3,793.99', status: false, delivery: 'PostExpress Besplatna', articles:[{ id: 3, quantity: 2 }, { id: 2, quantity: 1 }]},
-    { id:10016, to:'/orders', date:'Sre, 31.01.2024 u 10:20', customer:'Nenad Tomešić', total:'3,793.99', status: true, delivery: 'PostExpress Besplatna', articles:[{ id: 4, quantity: 2 }, { id: 2, quantity: 1 }]},
-    { id:10017, to:'/orders', date:'Sre, 31.01.2024 u 10:20', customer:'Nenad Tomešić', total:'3,793.99', status: true, delivery: 'PostExpress Besplatna', articles:[{ id: 5, quantity: 2 }, { id: 2, quantity: 1 }]},
-    { id:10019, to:'/orders', date:'Sre, 31.01.2024 u 10:20', customer:'Nenad Tomešić', total:'3,793.99', status: true, delivery: 'PostExpress Besplatna', articles:[{ id: 6, quantity: 2 }, { id: 2, quantity: 1 }]},
-    { id:10022, to:'/orders', date:'Sre, 31.01.2024 u 10:20', customer:'Nenad Tomešić', total:'3,793.99', status: true, delivery: 'PostExpress Besplatna', articles:[{ id: 7, quantity: 2 }, { id: 2, quantity: 1 }]},
-    { id:10023, to:'/orders', date:'Sre, 31.01.2024 u 10:20', customer:'Nenad Tomešić', total:'3,793.99', status: true, delivery: 'PostExpress Besplatna', articles:[{ id: 8, quantity: 2 }, { id: 2, quantity: 1 }]},
-    { id:10024, to:'/orders', date:'Sre, 31.01.2024 u 10:20', customer:'Nenad Tomešić', total:'3,793.99', status: true, delivery: 'PostExpress Besplatna', articles:[{ id: 9, quantity: 2 }, { id: 2, quantity: 1 }]},
-    { id:10025, to:'/orders', date:'Sre, 31.01.2024 u 10:20', customer:'Nenad Tomešić', total:'3,793.99', status: true, delivery: 'PostExpress Besplatna', articles:[{ id: 10, quantity: 2 }, { id: 2, quantity: 1 }]}
+    { id:10016, to:'/orders', date:'Sre, 31.01.2024 u 10:20', customer:'Nenad Tomešić', total:4793.99, status: true, delivery: 'PostExpress Besplatna', articles:[{ id: 4, quantity: 2 }, { id: 2, quantity: 1 }]},
+    { id:10017, to:'/orders', date:'Sre, 31.01.2024 u 10:20', customer:'Nenad Tomešić', total:5793.99, status: true, delivery: 'PostExpress Besplatna', articles:[{ id: 5, quantity: 2 }, { id: 2, quantity: 1 }]},
+    { id:10018, to:'/orders', date:'Sre, 31.01.2024 u 10:20', customer:'Nenad Tomešić', total:1793.99, status: false, delivery: 'PostExpress Besplatna', articles:[{ id: 1, quantity: 2 }, { id: 2, quantity: 1 }]},
+    { id:10019, to:'/orders', date:'Sre, 31.01.2024 u 10:20', customer:'Nenad Tomešić', total:6793.99, status: true, delivery: 'PostExpress Besplatna', articles:[{ id: 6, quantity: 2 }, { id: 2, quantity: 1 }]},
+    { id:10020, to:'/orders', date:'Sre, 31.01.2024 u 10:20', customer:'Nenad Tomešić', total:2793.99, status: false, delivery: 'PostExpress Besplatna', articles:[{ id: 2, quantity: 2 }, { id: 2, quantity: 1 }]},
+    { id:10021, to:'/orders', date:'Sre, 31.01.2024 u 10:20', customer:'Nenad Tomešić', total:3793.99, status: false, delivery: 'PostExpress Besplatna', articles:[{ id: 3, quantity: 2 }, { id: 2, quantity: 1 }]},
+    { id:10022, to:'/orders', date:'Sre, 31.01.2024 u 10:20', customer:'Nenad Tomešić', total:7793.99, status: true, delivery: 'PostExpress Besplatna', articles:[{ id: 7, quantity: 2 }, { id: 2, quantity: 1 }]},
+    { id:10023, to:'/orders', date:'Sre, 31.01.2024 u 10:20', customer:'Nenad Tomešić', total:8793.99, status: true, delivery: 'PostExpress Besplatna', articles:[{ id: 8, quantity: 2 }, { id: 2, quantity: 1 }]},
+    { id:10024, to:'/orders', date:'Sre, 31.01.2024 u 10:20', customer:'Nenad Tomešić', total:9793.99, status: true, delivery: 'PostExpress Besplatna', articles:[{ id: 9, quantity: 2 }, { id: 2, quantity: 1 }]},
+    { id:10025, to:'/orders', date:'Sre, 31.01.2024 u 10:20', customer:'Nenad Tomešić', total:10793.99, status: true, delivery: 'PostExpress Besplatna', articles:[{ id: 10, quantity: 2 }, { id: 2, quantity: 1 }]}
 ]
 
 export default orders

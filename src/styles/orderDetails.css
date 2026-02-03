@@ -161,11 +161,13 @@
     margin: 0;
 }
 
-.article .articlePricing p {
+.article .articlePricing .total {
     font-size: 12px;
     font-weight: 500;
     color: #000;
     margin: 0;
+    display: flex;
+    gap: 15px;
 }
 
 .article .articleHeading img {
