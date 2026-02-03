@@ -4,7 +4,7 @@ import method from '../../assets/method.svg'
 export default function Summary({itemsCount, subtotal}) {
     const pdv = subtotal * 0.2
     const delivery = 0
-    const total = subtotal + pdv + delivery
+    const total = subtotal + delivery
     return (
         <div className="orderSummary">
             <a className='method'><img src={method} alt="method"/>Plaćanje pouzećem</a>
