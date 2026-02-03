@@ -4,6 +4,8 @@ import ordersList from '../../../data/ordersList.js'
 
 export default function OrdersDashboardTable() {
 
+    const sortedOrders = [...ordersList].sort((a, b) => a.status - b.status)
+
     return (
         <div className="ordersDashboardTable">
             <div className="card">
@@ -25,7 +27,7 @@ export default function OrdersDashboardTable() {
                             </thead>
 
                             <tbody>
-                            {ordersList.map(order => (
+                            {sortedOrders.map(order => (
                                 <Order key={order.id} {...order} showExtra/>
                             ))}
                             </tbody>

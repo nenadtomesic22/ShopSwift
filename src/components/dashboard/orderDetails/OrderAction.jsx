@@ -1,10 +1,11 @@
 import '../../../styles/orderDetails.css'
 import articles from '../../../data/articlesList'
 import Article from '../../ui/Article'
+import MarkButton from '../../ui/MarkButton';
 
 export default function OrderAction({order}) {
     if (!order) return <NotFound />;
-
+    
         return (
             <div className="orderAction">
                 <div className="articles">
@@ -21,7 +22,7 @@ export default function OrderAction({order}) {
                         )
                     })}
                 </div>
-                <button className="markOrder">Ispuni porudžbinu</button>
+                <MarkButton orderStatus={order.status}/>
             </div>
         )
 }

@@ -1,6 +1,7 @@
 import './dashboard.css'
 import React from 'react'
 import DateTime from '../../ui/DateTime'
+import ordersList from '../../../data/ordersList.js'
 
 export default function StatsCard() {
     return (
@@ -23,7 +24,7 @@ export default function StatsCard() {
                 </div>
                 <div className="stats_col">
                     <p>Broj porudžbina</p>
-                    <span id='sales'>0</span>
+                    <span id='sales'>{ordersList.length}</span>
                 </div>
                 <div className="stats_col">
                     <p>Procenat konverzija</p>

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Li from '../ui/Li.jsx'
 import pocetna from '../../assets/pocetna.svg'
 import porudzbine from '../../assets/porudzbine.svg'
@@ -8,7 +7,10 @@ import settings from "../../assets/settings.svg";
 import ordersList from '../../data/ordersList.js'
 
 export default function SideBar() {
-    let badge = ordersList.length
+    let badge = 0
+    ordersList.map(orderItem => {
+        orderItem.status === false ? badge+= 1 : badge+= 0;
+    }); 
     
     const items = [
         {id: "pocetna", label: "Početna", icon: pocetna, to: '/home'},

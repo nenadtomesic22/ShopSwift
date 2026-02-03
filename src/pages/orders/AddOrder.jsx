@@ -10,11 +10,11 @@ import OrderCustomer from '../../components/dashboard/orderDetails/OrderCustomer
 import '../../styles/orderDetails.css'
 
 export default function OrderDetails() {
-    const { orderId } = useParams()
+    
     const navigate = useNavigate();
-    const order = ordersList.find(order => order.id === Number(orderId));
+    
 
-    if (!order) return <NotFound />;
+    
 
     return (
         <div className="orderDetails">
@@ -22,21 +22,21 @@ export default function OrderDetails() {
                 <div className="orderInfo">
                     <div className="row">
                         <img src={backwardsArrow} alt="arrow" onClick={() => navigate('/orders')}/>
-                        <h3>#{orderId}</h3>
-                        <StatusBadge status={order.status}></StatusBadge>
+                        <h3>#</h3>
+                        
                     </div>
-                    <p id='orderTime'>Vreme porudžbine: {order.date}</p>
+                    <p id='orderTime'>Vreme porudžbine: </p>
                 </div>
                 
                 <button className="remove">Obriši</button>
             </div>
             <div className="orderGrid">
                 <div className="left">
-                    <OrderAction order={order}/>
-                    <OrderSummary order={order}/>
+                    
+                    
                 </div>
                 <div className="right">
-                    <OrderCustomer order={order}/>
+                    
                 </div>
             </div>
 

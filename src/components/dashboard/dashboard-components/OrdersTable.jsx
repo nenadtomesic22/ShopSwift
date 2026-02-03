@@ -2,10 +2,7 @@ import './dashboard.css'
 import Order from '../../ui/Order'
 import ordersList from '../../../data/ordersList.js'
 
-export default function OrdersTable() {
-    
-    let badge = ordersList.length
-
+export default function OrdersTable({badge}) {
     return (
         <div className="ordersTable">
             {badge === 0 ? (
@@ -33,7 +30,9 @@ export default function OrdersTable() {
 
                             <tbody>
                             {ordersList.map(order => (
+                                !order.status && 
                                 <Order key={order.id} {...order} />
+                                 
                             ))}
                             </tbody>
                         </table>

@@ -5,6 +5,7 @@ import ProtectedRoute from './ProtectedRoute'
 import DashboardLayout from '../components/layout/DashboardLayout'
 import OrdersDashboard from '../components/OrdersDashboard'
 import OrderDetails from '../pages/orders/OrderDetails'
+import AddOrder from '../pages/orders/AddOrder'
 
 export default function AppRouter() {
   return (
@@ -17,6 +18,7 @@ export default function AppRouter() {
               <Route path="/home" element={<Home />} />
               <Route path="/orders" element={<OrdersDashboard />} />
               <Route path="/orders/:orderId" element={<OrderDetails />} />
+              <Route path="/orders/add_order" element={<AddOrder />} />
               <Route path="/products" element={<OrdersDashboard />} />
               <Route path="/analytics" element={<OrdersDashboard />} />
             </Route>
