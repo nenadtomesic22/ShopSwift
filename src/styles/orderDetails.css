@@ -27,7 +27,7 @@
     cursor: pointer;
 }
 
-.remove {
+.delete {
     color: #000;
     background-color: #DADADA;
     border: 1px solid #DADADA;
@@ -67,7 +67,7 @@
     border-radius: 5px;
 }
 
-.orderAction .articles .article {
+.article {
     padding: 12px;
     border-bottom: 1px solid #DEDEDE;
     display: flex;
@@ -75,7 +75,7 @@
     align-items: center
 }
 
-.orderAction .articles .article:last-child {
+.article:last-child {
     border-bottom: 0;
 }
 
@@ -188,6 +188,9 @@
     padding: 20px;
     border-radius: 10px;
     border: 1px solid #DEDEDE;
+    width: 590px;
+    display: flex;
+    flex-direction: column;
 }
 
 .method {
@@ -204,6 +207,7 @@
     border-radius: 5px;
     margin-bottom: 12px;
     cursor: default;
+    align-self: flex-start;
 }
 
 .summaryCard {

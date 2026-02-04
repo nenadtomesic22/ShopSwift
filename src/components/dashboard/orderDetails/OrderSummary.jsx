@@ -1,7 +1,10 @@
 import Summary from '../../ui/Summary'
 import articles from '../../../data/articlesList.js'
+import NotFound from '../../../pages/NotFound'
 
-export default function OrderSummary({order}) {
+export default function OrderSummary({order, showExtra = false}) {
+    if (!order || !order.articles) return <NotFound />
+    
     const itemsCount = order.articles.reduce(
     (sum, item) => sum + item.quantity,
     0
@@ -21,6 +24,7 @@ export default function OrderSummary({order}) {
             itemsCount={itemsCount}
             subtotal={subtotal}
             delivery={order.delivery}
+            showExtra={showExtra}
         />
     )
 }

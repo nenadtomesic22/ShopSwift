@@ -70,10 +70,6 @@
     color: #000;
 }
 
-.ordersTable .card {
-    /* overflow: hidden; */
-}
-
 .ordersTable h3 {
     font-size: 16px;
     font-weight: 600;
@@ -86,7 +82,7 @@
 
 .table-wrapper {
     max-height: 250px;
-    overflow-y: auto;   /* ⬅️ SAMO OVDE scroll */
+    overflow-y: auto; 
 }
 
 table {

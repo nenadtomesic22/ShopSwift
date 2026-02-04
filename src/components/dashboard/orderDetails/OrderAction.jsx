@@ -1,10 +1,12 @@
+import NotFound from '../../../pages/NotFound'
 import '../../../styles/orderDetails.css'
 import articles from '../../../data/articlesList'
 import Article from '../../ui/Article'
 import MarkButton from '../../ui/MarkButton';
 
 export default function OrderAction({order}) {
-    if (!order) return <NotFound />;
+    
+    if (!order || !order.articles) return <NotFound />
     
         return (
             <div className="orderAction">
@@ -18,6 +20,7 @@ export default function OrderAction({order}) {
                                 key={article.id}
                                 {...article}
                                 quantity={orderItem.quantity}
+                                showExtra
                             />
                         )
                     })}

@@ -1,19 +1,17 @@
 import { useParams } from 'react-router-dom'
 import { useNavigate } from "react-router-dom";
 import backwardsArrow from '../../assets/backwards.svg'
-import StatusBadge from '../../components/ui/StatusBadge';
-import ordersList from '../../data/ordersList.js'
-import articles from '../../data/articlesList.js'
-import OrderAction from '../../components/dashboard/orderDetails/OrderAction';
+import OrderProductsSection from '../../components/dashboard/addOrder/OrderProductsSection';
 import OrderSummary from '../../components/dashboard/orderDetails/OrderSummary';
 import OrderCustomer from '../../components/dashboard/orderDetails/OrderCustomer';
 import '../../styles/orderDetails.css'
+import {createEmptyOrder} from '../../data/orderTemplate'
 
 export default function OrderDetails() {
-    
     const navigate = useNavigate();
+    const order = createEmptyOrder();
     
-
+    
     
 
     return (
@@ -22,21 +20,18 @@ export default function OrderDetails() {
                 <div className="orderInfo">
                     <div className="row">
                         <img src={backwardsArrow} alt="arrow" onClick={() => navigate('/orders')}/>
-                        <h3>#</h3>
+                        <h3>Kreiraj porudzbinu</h3>
                         
                     </div>
-                    <p id='orderTime'>Vreme porudžbine: </p>
                 </div>
-                
-                <button className="remove">Obriši</button>
             </div>
             <div className="orderGrid">
                 <div className="left">
-                    
-                    
+                    <OrderProductsSection/>
+                    <OrderSummary order={order} showExtra/>
                 </div>
                 <div className="right">
-                    
+                    <OrderCustomer order={order}/>
                 </div>
             </div>
 

@@ -19,6 +19,7 @@ export default function SideBar() {
         {id: "analitika", label: "Analitika", icon: analitika, to: '/analytics'},
     ];
     
+    
     return (
         <div className="SideBar">
             <ul>

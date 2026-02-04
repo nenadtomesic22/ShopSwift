@@ -3,7 +3,9 @@ import Order from '../../ui/Order'
 import ordersList from '../../../data/ordersList.js'
 
 export default function OrdersTable({badge}) {
+    
     return (
+        
         <div className="ordersTable">
             {badge === 0 ? (
                 <h3>Porudžbine za ispuniti</h3>

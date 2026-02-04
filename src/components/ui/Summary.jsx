@@ -1,7 +1,7 @@
 import '../../styles/orderDetails.css'
 import method from '../../assets/method.svg'
 
-export default function Summary({itemsCount, subtotal, delivery}) {
+export default function Summary({itemsCount, subtotal, delivery, showExtra = false}) {
     const pdv = subtotal * 0.2
     const total = subtotal + delivery
     return (
@@ -41,7 +41,8 @@ export default function Summary({itemsCount, subtotal, delivery}) {
                     </div>
                     <span className="price">RSD {total.toFixed(2)}</span>
                 </div>
-                </div>
+            </div>
+            {showExtra && <button id='confirm_order'>Potvrdi porudžbinu</button>}
         </div>
     )
 }

@@ -28,7 +28,7 @@ export default function OrderDetails() {
                     <p id='orderTime'>Vreme porudžbine: {order.date}</p>
                 </div>
                 
-                <button className="remove">Obriši</button>
+                <button className="delete">Obriši</button>
             </div>
             <div className="orderGrid">
                 <div className="left">
