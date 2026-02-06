@@ -4,6 +4,7 @@ import Home from '../pages/Home'
 import ProtectedRoute from './ProtectedRoute'
 import DashboardLayout from '../components/layout/DashboardLayout'
 import OrdersDashboard from '../components/OrdersDashboard'
+import AnalyticsDashboard from '../components/AnalyticsDashboard'
 import OrderDetails from '../pages/orders/OrderDetails'
 import AddOrder from '../pages/orders/AddOrder'
 
@@ -19,8 +20,8 @@ export default function AppRouter() {
               <Route path="/orders" element={<OrdersDashboard />} />
               <Route path="/orders/:orderId" element={<OrderDetails />} />
               <Route path="/orders/add_order" element={<AddOrder />} />
-              <Route path="/products" element={<OrdersDashboard />} />
-              <Route path="/analytics" element={<OrdersDashboard />} />
+              <Route path="/products" element={<AnalyticsDashboard />} />
+              <Route path="/analytics" element={<AnalyticsDashboard />} />
             </Route>
         
         </Route>

@@ -1,7 +1,7 @@
-import OrdersDashboard from '../components/OrdersDashboard'
+import AnalyticsDashboard from '../components/AnalyticsDashboardDashboard'
 
 export default function Analytics() {
   return (
-      <OrdersDashboard />
+      <AnalyticsDashboard />
   )
 }
