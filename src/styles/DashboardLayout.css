@@ -35,7 +35,7 @@ body.dashboard-body {
     justify-content: center;
 }
 
-ul {
+.SideBar ul {
     list-style: none;
     width: 100%;
     display: flex;
@@ -45,7 +45,7 @@ ul {
     padding: 15px 20px;
 }
 
-li {
+.SideBar li {
     display: flex;
     border-radius: 5px;
     list-style: none;

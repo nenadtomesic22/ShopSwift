@@ -11,3 +11,7 @@
 .stats_col span, .analyticsCard span {
   font-family: "Roboto Mono", monospace;
 }
+
+ul {
+  list-style: none;
+}

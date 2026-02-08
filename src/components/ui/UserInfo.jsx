@@ -3,16 +3,15 @@ import { useNavigate } from 'react-router-dom'
 import avatar from '../../assets/avatar.svg'
 import checkMark from '../../assets/checkMark.svg'
 
-export default function UserInfo({isOpen}) {
+export default function UserInfo() {
     const navigate = useNavigate()
-    if (!isOpen) return null;
     
     const handleLogout = () => {
         localStorage.removeItem('token')
         navigate('/login')
     }
     return (
-        <div className="userInfo" onClick={(e) => e.stopPropagation()}>
+        <div className="userInfo">
             <div className="userWrapp">
                 <div className='store'>
                     <a href="#" id="avatar"><img src={avatar} alt="avatar"/></a>

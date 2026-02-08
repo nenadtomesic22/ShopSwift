@@ -4,16 +4,11 @@ import Logo from '../../assets/Logo.svg'
 import Avatar from '../../assets/avatar.svg'
 import '../../styles/Header.css'
 import UserInfo from '../ui/UserInfo'
+import Modal from '../ui/Modal/Modal.jsx'
 
 export default function Header(User) {
     User = "Butik Orlando"
     const [menuOpen, setMenuOpen] = useState(false);
-    
-    useEffect(() => {
-        const close = () => setMenuOpen(false);
-        window.addEventListener("click", close);
-        return () => window.removeEventListener("click", close);
-    }, []);
 
 
     return (
@@ -23,7 +18,11 @@ export default function Header(User) {
                 <p>{User}</p>
                 <a href="#" id='avatar'><img src={Avatar} alt="avatar" /></a>
             </div>
-            <UserInfo isOpen={menuOpen} />
+            {menuOpen && (
+                <Modal onClose={() => setMenuOpen(false)} isOpen={menuOpen}>
+                    <UserInfo />
+                </Modal>
+            )}
         </div>
     )
 }

@@ -1,0 +1,32 @@
+.filter {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.filter ul {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.filter ul:first-child {
+    padding-top: 10px;
+}
+
+.filter ul:last-child {
+    padding-bottom: 10px;
+    border-bottom: 0;
+}
+
+.filter ul li {
+    padding: 10px;
+}
+
+.filter ul li a {
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+}

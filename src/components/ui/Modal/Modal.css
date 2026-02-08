@@ -1,0 +1,12 @@
+
+.modal {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #DEDEDE;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 10px);
+}

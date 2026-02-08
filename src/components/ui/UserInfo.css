@@ -1,12 +1,10 @@
 .userInfo {
-  position: absolute;
-  top: 60px;
-  right: 20px;
   width: 280px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 0px 10px 5px rgba(0,0,0,0.2);
   padding-block: 20px;
+}
+
+.NavBar .modal {
+    right: 20px;
 }
 
 .userWrapp {

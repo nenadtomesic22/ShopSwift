@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .analyticsDashboard .heading_row h3 {
@@ -30,6 +31,7 @@
     border-radius: 5px;
     padding: 10px 20px;
     border: 1px solid #DEDEDE;
+    cursor: pointer;
 }
 
 .analyticsCards {
@@ -66,9 +68,16 @@
 
 .analyticsCard {
     background-color: #fff;
-    padding: 20px;
+    padding-block: 20px;
     border-radius: 10px;
     border: 1px solid #DEDEDE;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.analyticsCard .heading, .analyticsCard span {
+    padding-inline: 20px;
 }
 
 .analyticsCard .heading {
@@ -81,6 +90,13 @@
     font-weight: 400;
     font-size: 14px;
     color: rgba(000, 000, 000, .6);
+}
+
+.analyticsCard .heading h3::after {
+    content: '';
+    border: 1px solid rgba(000, 000, 000, .05);
+    display: flex;
+    
 }
 
 .analyticsCard .heading a {
@@ -100,4 +116,64 @@
 .analyticsCard span {
     font-weight: 500;
     font-size: 40px;
+}
+
+.analyticsCard ul li {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #DEDEDE;
+    padding-block: 10px;
+    padding-inline: 20px;
+    gap: 2px;
+}
+
+.analyticsCard ul li:first-child {
+    padding-top: 0;
+}
+
+.analyticsCard ul li:last-child {
+    border: 0;
+    padding-bottom: 0;
+}
+
+.analyticsCard ul li h4 {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.analyticsCard ul li div {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.analyticsCard ul li span {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #000;
+    padding-inline: 0px;
+}
+
+.analyticsCard:has(.bestseller) {
+    justify-content: space-between;
+}
+
+.analyticsCard .bestseller li {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 12px;
+}
+
+.analyticsCard ul li a {
+    text-decoration: underline;
+    align-self: flex-start;
+}
+
+.analyticsCard ul li a, .analyticsCard ul li p {
+    color: #000;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0;
 }
