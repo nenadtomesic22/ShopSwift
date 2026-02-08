@@ -2,7 +2,7 @@ import '../../../styles/orderDetails.css'
 import unesi from '../../../assets/unesi.svg'
 import { useRef } from 'react'
 import Popover from '../../ui/Popover/Popover'
-import AddCustomer from '../addOrder/addCustomer'
+import AddCustomer from '../addOrder/AddCustomer.jsx'
 
 
 export default function OrderCustomer({order}) {
