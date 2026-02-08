@@ -114,10 +114,29 @@
     border: 1px solid #DEDEDE;
 }
 
-.orderCustomer h4 {
+.orderCustomer .heading_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orderCustomer .heading_row h4 {
     color: #000;
     font-weight: 600;
     font-size: 14px;
+}
+
+.orderCustomer .heading_row button {
+    background-color: transparent;
+    border: 0;
+    color: rgba(000, 000, 000, .2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
 }
 
 .orderCustomer .customerText {

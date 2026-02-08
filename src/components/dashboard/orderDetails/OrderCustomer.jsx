@@ -1,15 +1,24 @@
 import '../../../styles/orderDetails.css'
+import unesi from '../../../assets/unesi.svg'
+import { useRef } from 'react'
+import Popover from '../../ui/Popover/Popover'
+import AddCustomer from '../addOrder/addCustomer'
 
 
 export default function OrderCustomer({order}) {
-    const displayValue = (value, fallback) => value && value !== 0 ? value : fallback
-    //order.customer.name ? console.log(order.customer.name) : console.log('Unesi ime kupca');
+    const addCustomerRef = useRef(null)
     
     
     return(
         <div className="orderCustomer">
             <div className="customer_wrapp">
-                <h4>Kupac</h4>
+                <div className="heading_row">
+                    <h4>Kupac</h4>
+                    {!order.customer.name && <button ref={addCustomerRef} popoverTarget="addCustomerPopover" popoverTargetAction="click">Unesi<img src={unesi} alt="unesi"/></button>}
+                    <Popover id='addCustomerPopover' triggerRef={addCustomerRef}>
+                        <AddCustomer />
+                    </Popover>
+                </div>
                 <div className="customer">
                     <p className="customerText">{order.customer?.name || 'Prazno'}</p>
                 </div>
