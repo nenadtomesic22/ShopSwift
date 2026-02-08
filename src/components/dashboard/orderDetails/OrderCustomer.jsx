@@ -11,25 +11,24 @@ export default function OrderCustomer({order}) {
             <div className="customer_wrapp">
                 <h4>Kupac</h4>
                 <div className="customer">
-                    <p className="customerText">{order.customer.name || 'Unesi ime kupca'}</p>
-                    <p className="customerText">1 porudžbina</p>
+                    <p className="customerText">{order.customer?.name || 'Prazno'}</p>
                 </div>
             </div>
             <div className="contact_details_wrapp">
                 <h4>Kontakt detalji</h4>
                 <div className="contact_details">
-                    <p className="customerText">{order.customer.email || 'Unesi email'}</p>
-                    <p className="customerText">{order.customer.phone ? `+${order.customer.phone}` : 'Unesi broj telefona'}</p>
+                    <p className="customerText">{order.customer?.email || 'Prazno'}</p>
+                    {order.customer?.phone && (<p className="customerText">+{order.customer.phone}</p>)}
                 </div>
             </div>
             <div className="delivery_details_wrapp">
                 <h4>Detalji za dostavu</h4>
                 <div className="delivery_details">
-                    <p className="customerText">{order.customer.name || 'Unesi ime kupca'}</p>
-                    <p className="customerText">{order.customer.address || 'Unesi adresu'}</p>
-                    <p className="customerText">{order.customer.city || 'Unesi postanski broj i grad'}</p>
-                    <p className="customerText">{order.customer.country || 'Unesi drzavu'}</p>
-                    <p className="customerText">{order.customer.phones || 'Unesi broj telefona'}</p>
+                    <p className="customerText">{order.customer.name || 'Prazno'}</p>
+                    {order.customer?.address && (<p className="customerText">{order.customer.address}</p>)}
+                    {order.customer?.city && (<p className="customerText">{order.customer.city}</p>)}
+                    {order.customer?.country && (<p className="customerText">{order.customer.country}</p>)}
+                    {order.customer?.phone && ( <p className="customerText">+{order.customer.phone}</p>)}
                 </div>
             </div>
         </div>

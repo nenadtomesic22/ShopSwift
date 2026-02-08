@@ -35,6 +35,13 @@
     border-radius: 5px;
     height: 32px;
     cursor: pointer;
+    border: 0;
+    position: relative;
+    anchor-name: --avatar;
+}
+
+.popover:has(#userInfo) {
+    position-anchor: --avatar;
 }
 
 #avatar {
