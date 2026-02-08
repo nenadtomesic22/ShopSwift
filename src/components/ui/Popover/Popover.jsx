@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import './popover.css'
+import './Popover.css'
 
 export default function Popover({ id, triggerRef, children }) {
   const popoverRef = useRef(null);
