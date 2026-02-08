@@ -38,6 +38,10 @@ export default function AddCustomer () {
                     <input type="number" id="deliveryNumber" placeholder="Unesite broj za dostavu"/>
                 </label>
             </div>
+            <div className="buttons_row">
+                <button type='button' className='close-btn'>Otkazi</button>
+                <button className='submitCustomer'>Dodaj</button>
+            </div>
         </form>
     )
 }

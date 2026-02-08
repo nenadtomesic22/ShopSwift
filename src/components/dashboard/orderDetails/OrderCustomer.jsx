@@ -1,7 +1,7 @@
 import '../../../styles/orderDetails.css'
 import unesi from '../../../assets/unesi.svg'
 import { useRef } from 'react'
-import Popover from '../../ui/Popover/Popover'
+import Modal from '../../ui/Modal/Modal'
 import AddCustomer from '../addOrder/AddCustomer.jsx'
 
 
@@ -14,10 +14,10 @@ export default function OrderCustomer({order}) {
             <div className="customer_wrapp">
                 <div className="heading_row">
                     <h4>Kupac</h4>
-                    {!order.customer.name && <button ref={addCustomerRef} popoverTarget="addCustomerPopover" popoverTargetAction="click">Unesi<img src={unesi} alt="unesi"/></button>}
-                    <Popover id='addCustomerPopover' triggerRef={addCustomerRef}>
+                    {!order.customer.name && <button onClick={() => addCustomerRef.current?.showModal()}>Unesi<img src={unesi} alt="unesi"/></button>}
+                    <Modal id='addCustomerPopover' modalRef={addCustomerRef}>
                         <AddCustomer />
-                    </Popover>
+                    </Modal>
                 </div>
                 <div className="customer">
                     <p className="customerText">{order.customer?.name || 'Prazno'}</p>

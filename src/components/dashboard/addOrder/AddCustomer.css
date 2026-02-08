@@ -11,6 +11,10 @@
     padding: 20px;
 }
 
+.addCustomer .row:nth-last-child(2) {
+    border-bottom: 1px solid #DEDEDE;
+}
+
 .addCustomer h3 {
     width: 100%;
     background-color: rgba(000, 000, 000, .05);
@@ -46,15 +50,28 @@
     font-weight: 300;
 }
 
-.popover:has(.addCustomer) {
-    inset: 35%;
-    top: 25%;
+.addCustomer .buttons_row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 20px;
+    padding-top: 12px;
 }
 
-.popover:has(.addCustomer)::backdrop {
-    background-color: rgba(000, 000, 000, .3);
+.addCustomer .buttons_row button {
+    padding: 10px 18px;
+    background-color: transparent;
+    color: rgba(000, 000, 000, .6);
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    color: rgba(000, 000, 000, .6);
+    font-size: 14px;
+    font-weight: 500;
 }
 
-.popover:has(.addCustomer):active body {
-    overflow: hidden;
+.addCustomer .buttons_row button.submitCustomer {
+    color: #fff;
+    background-color: #000;
+    border: 0;
 }
