@@ -80,22 +80,19 @@
     padding-block: 3px;
 }
 
-.table-wrapper {
-    max-height: 250px;
-    overflow-y: auto; 
-}
-
 table {
     width: 100%;
     table-layout: fixed;
     border-collapse: collapse;
 }
+thead {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
 
 thead th {
     text-align: left;
-    position: sticky;
-    top: 0;
-    z-index: 2;
     background-color: #F2F2F2;
     padding: 10px 12px;
     color: #000;
@@ -125,9 +122,19 @@ td:first-child {
     font-weight: 700;
 }
 
+tbody {
+    display: block;
+    max-height: 250px;
+    overflow-y: auto;
+    width: 100%;
+}
+
 tbody tr {
     border-bottom: 1px solid rgba(000, 000, 000, .05);
     cursor: pointer;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
 }
 
 tbody tr:last-child {
