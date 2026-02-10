@@ -13,7 +13,7 @@
     margin: 0;
 }
 
-.statusBadge.pending {
+.statusBadge.unDone {
     background-color: #FFE89B;
 }
 
@@ -23,7 +23,7 @@
     border-radius: 3px;
 }
 
-.statusBadge.pending .text {
+.statusBadge.unDone .text {
     color: #FFC60B;
 }
 
@@ -34,6 +34,13 @@
 .statusBadge.done .text {
     color: #42855B;
 }
+.statusBadge.canceled {
+    background-color: #fb4242;
+}
+
+.statusBadge.canceled .text {
+    color: #ff0b0b;
+}
 
 .pending span {
     border: 1px solid #FFC60B;
@@ -41,4 +48,8 @@
 
 .done span {
     border: 1px solid #42855B;
+}
+
+.canceled span {
+    border: 1px solid #ff0b0b;
 }
