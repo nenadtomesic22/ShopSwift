@@ -1,7 +1,6 @@
 import './StatusBadge.css'
 
 export default function StatusBadge({status}) {
-    console.log(status);
     
     
     
@@ -17,7 +16,6 @@ export default function StatusBadge({status}) {
                 return 'Nepoznato';
         }
     };
-    console.log(getStatusText());
     return (
         <div className={`statusBadge ${status}`}>
             <span className="dot"></span>

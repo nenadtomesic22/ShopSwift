@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import backwardsArrow from '../../assets/backwards.svg'
 import StatusBadge from '../../components/ui/StatusBadge';
 import ordersList from '../../data/ordersList.js'
-import articles from '../../data/articlesList.js'
+import CancelOrder from '../../components/ui/CancelOrder.jsx'
 import OrderAction from '../../components/dashboard/orderDetails/OrderAction';
 import OrderSummary from '../../components/dashboard/orderDetails/OrderSummary';
 import OrderCustomer from '../../components/dashboard/orderDetails/OrderCustomer';
@@ -28,7 +28,7 @@ export default function OrderDetails() {
                     <p id='orderTime'>Vreme porudžbine: {order.date}</p>
                 </div>
                 
-                <button className="delete">Obriši</button>
+                <CancelOrder orderStatus={order.status}/>
             </div>
             <div className="orderGrid">
                 <div className="left">

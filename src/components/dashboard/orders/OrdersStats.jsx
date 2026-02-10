@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function OrdersStats() {
     const status = ordersList.reduce((acc, order) => {
-        order.status === false ? acc.unDone++ : acc.done++
+        order.status === 'unDone' ? acc.unDone++ : acc.done++
         acc.totalArticles += order.articles.length
         return acc
     },

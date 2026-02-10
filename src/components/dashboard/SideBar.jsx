@@ -9,7 +9,7 @@ import ordersList from '../../data/ordersList.js'
 export default function SideBar() {
     let badge = 0
     ordersList.map(orderItem => {
-        orderItem.status === false ? badge+= 1 : badge+= 0;
+        orderItem.status === 'unDone' ? badge+= 1 : badge+= 0;
     }); 
     
     const items = [

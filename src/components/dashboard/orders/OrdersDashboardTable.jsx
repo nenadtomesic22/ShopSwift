@@ -4,7 +4,13 @@ import ordersList from '../../../data/ordersList.js'
 
 export default function OrdersDashboardTable() {
 
-    const sortedOrders = [...ordersList].sort((a, b) => a.status - b.status)
+    const statusOrder = {
+        unDone : 0,
+        done: 1,
+        canceled: 2
+    }
+
+    const sortedOrders = [...ordersList].sort((a, b) => statusOrder[a.status] - statusOrder[b.status])
 
     return (
         <div className="ordersDashboardTable">

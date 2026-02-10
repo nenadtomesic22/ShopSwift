@@ -7,7 +7,7 @@ export default function OrdersTable({badge}) {
     return (
         
         <div className="ordersTable">
-            {badge === 0 ? (
+            {badge === 'unDone' ? (
                 <h3>Porudžbine za ispuniti</h3>
 
             ) : (
@@ -32,7 +32,7 @@ export default function OrdersTable({badge}) {
 
                             <tbody>
                             {ordersList.map(order => (
-                                !order.status && 
+                                order.status==='unDone' && 
                                 <Order key={order.id} {...order} />
                                  
                             ))}

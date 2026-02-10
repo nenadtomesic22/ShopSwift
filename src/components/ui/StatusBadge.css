@@ -35,14 +35,14 @@
     color: #42855B;
 }
 .statusBadge.canceled {
-    background-color: #fb4242;
+    background-color: #F7B596;
 }
 
 .statusBadge.canceled .text {
-    color: #ff0b0b;
+    color: #FF580B;
 }
 
-.pending span {
+.unDone span {
     border: 1px solid #FFC60B;
 }
 
@@ -51,5 +51,5 @@
 }
 
 .canceled span {
-    border: 1px solid #ff0b0b;
+    border: 1px solid #FF580B;
 }
