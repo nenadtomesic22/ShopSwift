@@ -5,15 +5,48 @@ import posete from '../../../assets/posete.svg'
 import prosek from '../../../assets/prosek.svg'
 import bestseller from '../../../assets/bestseller.svg'
 import chart from '../../../assets/chart.svg'
+import ordersList from '../../../data/ordersList.js'
+import articlesList from '../../../data/articlesList.js'
 
 export default function AnalyticsCards () {
+    const total = ordersList.reduce(
+    (sum, order) => sum + order.total,
+    0
+    )
+    
+    function getSortedArticlesBySales(ordersList) {
+        const counter = {};
+
+        ordersList.forEach(order => {
+            order.articles.forEach(item => {
+            const id = item.id;
+            const article = articlesList.find(a => a.id === id);
+            if (!counter[id]) {
+                counter[id] = {
+                article_id: item.id,
+                article: article,
+                total: 0
+                };
+            }
+
+            counter[id].total += item.quantity;
+            });
+        });
+
+        return Object.values(counter)
+            .sort((a, b) => b.total - a.total);
+        }
+
+
+    const sorteditems = getSortedArticlesBySales(ordersList);
+    
     return (
         <div className="analyticsCards">
             <AnalyticsCard heading={'Ukupan promet'} icon={promet}> 
-                <span>RSD 0.00</span>
+                <span>RSD {total.toFixed(2)}</span>
             </AnalyticsCard>
             <AnalyticsCard heading={'Broj porudzbina'} icon={porudzbine}>
-                <span>0</span>
+                <span>{ordersList.length}</span>
             </AnalyticsCard>
             <AnalyticsCard heading={'Procenat konverzija'} icon={chart}>
                 <span>0%</span>
@@ -44,32 +77,32 @@ export default function AnalyticsCards () {
             <AnalyticsCard heading={'Najprodavaniji proizvodi'} icon={bestseller}>
                 <ul className='bestseller'>
                     <li>
-                        <a href="#">ime-proizvoda-1</a>
+                        <a href="#">{sorteditems[0].article.name}</a>
                         <p>6</p>
                     </li>
                     <li>
-                        <a href="#">ime-proizvoda-2</a>
+                        <a href="#">{sorteditems[1].article.name}</a>
                         <p>3</p>
                     </li>
                     <li>
-                        <a href="#">ime-proizvoda-3</a>
+                        <a href="#">{sorteditems[2].article.name}</a>
                         <p>2</p>
                     </li>
                     <li>
-                        <a href="#">ime-proizvoda-4</a>
+                        <a href="#">{sorteditems[3].article.name}</a>
                         <p>1</p>
                     </li>
                     <li>
-                        <a href="#">ime-proizvoda-5</a>
+                        <a href="#">{sorteditems[4].article.name}</a>
                         <p>1</p>
                     </li>
                 </ul>
             </AnalyticsCard>
             <AnalyticsCard heading={'Posete web stranici'} icon={posete}>
-                <span>15</span>
+                <span>0</span>
             </AnalyticsCard>
             <AnalyticsCard heading={'AOV'} icon={prosek}>
-                <span>0</span>
+                <span>RSD {(total / ordersList.length).toFixed(2)}</span>
             </AnalyticsCard>
         </div>
     )
