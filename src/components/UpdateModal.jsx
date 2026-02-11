@@ -5,7 +5,7 @@ export default function UpdateModal() {
   const { isOpen, setIsOpen, commitMessage } = useUpdate();
 
   console.log(import.meta.env);
-  console.log(import.meta.env.VITE_COMMIT_MESSAGE);
+  console.log(import.meta.env.VITE_VERCEL_GIT_COMMIT_MESSAGE);
   if (!isOpen) return null;
 
   return (
