@@ -54,4 +54,5 @@ body:has(dialog[open]) {
   padding: 10px 16px;
   place-self: normal;
   height: 40px;
+  cursor: pointer;
 }
