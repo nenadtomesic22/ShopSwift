@@ -9,7 +9,6 @@ export default function Modal({children, modalRef, id}) {
 
     return (
         <dialog 
-        onClick={handleContentClick}
         ref={modalRef}
         popover='auto'
         id={id}

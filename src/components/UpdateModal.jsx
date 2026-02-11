@@ -17,7 +17,12 @@ export default function UpdateModal() {
     <Modal modalRef={modalRef} id="update">
       <h2>Novi update</h2>
       <p>{commitMessage}</p>
-      <button className='close-btn' >
+      <button onClick={() => {
+    if (modalRef.current && modalRef.current.open) {
+      modalRef.current.close();
+    }
+    setIsOpen(false);
+  }}>
         Zatvori
       </button>
     </Modal>
