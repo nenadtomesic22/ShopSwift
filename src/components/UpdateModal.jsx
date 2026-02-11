@@ -7,14 +7,10 @@ export default function UpdateModal() {
   const { isOpen, setIsOpen, commitMessage } = useUpdate();
 
   useEffect(() => {
-    if (isOpen && modalRef.current) {
+    if (isOpen && modalRef.current&& !modalRef.current.open) {
       modalRef.current.showModal();
-      console.log('mudja');
     }
   }, [isOpen]);
-  if (isOpen && modalRef.current && !modalRef.current.open) {
-  modalRef.current.showModal();
-}
 
 
   return (
