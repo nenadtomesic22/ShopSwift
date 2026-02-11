@@ -20,6 +20,7 @@ export default function UpdateModal() {
       <button onClick={() => {
         modalRef.current.close();
         setIsOpen(false);
+        className='close-btn'
       }}>
         Zatvori
       </button>
