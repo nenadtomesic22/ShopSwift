@@ -1,6 +1,6 @@
 import './Modal.css'
 
-export default function Modal({children, id, modalRef}) {
+export default function Modal({children, modalRef}) {
     const handleContentClick = (e) => {
         if (e.target.closest(".close-btn")) {
             modalRef.current.close();
@@ -11,7 +11,6 @@ export default function Modal({children, id, modalRef}) {
         <dialog 
         onClick={handleContentClick}
         ref={modalRef}
-        id={id}
         popover='auto'
         className="modal"
         >

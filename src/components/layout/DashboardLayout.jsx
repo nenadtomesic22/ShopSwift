@@ -16,9 +16,9 @@ export default function DashboardLayout({ children }) {
     <div className="dashboard-layout">
       <Header />
       <div className="layout-body">
-      <UpdateModal />
         <SideBar />
         <main className="content">
+          <UpdateModal />
           <Outlet />
         </main>
       </div>

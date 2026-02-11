@@ -15,7 +15,7 @@ export default function OrderCustomer({order}) {
                 <div className="heading_row">
                     <h4>Kupac</h4>
                     {!order.customer.name && <button onClick={() => addCustomerRef.current?.showModal()}>Unesi<img src={unesi} alt="unesi"/></button>}
-                    <Modal id='addCustomerPopover' modalRef={addCustomerRef}>
+                    <Modal modalRef={addCustomerRef}>
                         <AddCustomer />
                     </Modal>
                 </div>

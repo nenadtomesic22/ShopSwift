@@ -1,19 +1,32 @@
-import { useUpdate } from "../components/UpdateContext";
-import Modal from "./ui/Modal/Modal.jsx";
+import { useEffect, useRef } from "react";
+import { useUpdate } from "./UpdateContext";
+import Modal from "./ui/Modal/Modal";
 
 export default function UpdateModal() {
+  const modalRef = useRef(null);
   const { isOpen, setIsOpen, commitMessage } = useUpdate();
 
-  console.log(import.meta.env);
-  console.log(import.meta.env.VITE_VERCEL_GIT_COMMIT_MESSAGE);
-  if (!isOpen) return null;
+  useEffect(() => {
+    if (isOpen && modalRef.current) {
+      modalRef.current.showModal();
+      console.log('mudja');
+    }
+  }, [isOpen]);
+  if (isOpen && modalRef.current && !modalRef.current.open) {
+  modalRef.current.showModal();
+}
+
 
   return (
-    // <Modal onClose={() => setIsOpen(false)}>
-    //   <h2>Novi update</h2>
-    //   <p>{commitMessage}</p>
-    // </Modal>
-    <h4>Mudja</h4>
-    
+    <Modal modalRef={modalRef}>
+      <h2>Novi update</h2>
+      <p>{commitMessage}</p>
+      <button onClick={() => {
+        modalRef.current.close();
+        setIsOpen(false);
+      }}>
+        Zatvori
+      </button>
+    </Modal>
   );
 }
