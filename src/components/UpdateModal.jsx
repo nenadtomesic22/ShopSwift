@@ -18,7 +18,7 @@ export default function UpdateModal() {
 
 
   return (
-    <Modal modalRef={modalRef}>
+    <Modal modalRef={modalRef} id="update">
       <h2>Novi update</h2>
       <p>{commitMessage}</p>
       <button onClick={() => {

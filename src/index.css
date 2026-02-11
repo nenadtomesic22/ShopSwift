@@ -19,3 +19,38 @@ ul {
 body:has(dialog[open]) {
   overflow: hidden;
 }
+
+#update {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+}
+#update h2 {
+  font-size: 2rem;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#update p {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 1rem;
+  color: #000;
+  text-transform: capitalize;
+}
+
+#update button {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 16px;
+  place-self: normal;
+}

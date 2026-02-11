@@ -10,13 +10,8 @@ export function UpdateProvider({ children }) {
   useEffect(() => {
     localStorage.setItem('lastSeenCommit', 0)
     const lastSeen = localStorage.getItem("lastSeenCommit");
-    console.log(lastSeen);
-    console.log(commitMessage);
-    console.log(commitSha);
     
     if (commitSha && lastSeen !== commitSha) {
-        console.log('mudja');
-        
       setIsOpen(true);
       localStorage.setItem("lastSeenCommit", commitSha);
     }
