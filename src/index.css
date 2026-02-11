@@ -25,24 +25,24 @@ body:has(dialog[open]) {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 400px;
+  justify-content: space-around;
+  min-width: 400px;
   height: 400px;
 }
 #update h2 {
   font-size: 2rem;
   color: #000;
   text-transform: uppercase;
-  margin-bottom: 40px;
   text-align: center;
+  margin: 0;
 }
 
 #update p {
-  margin-bottom: 40px;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #000;
-  text-transform: capitalize;
+  font-weight: 500;
+  margin: 0;
 }
 
 #update button {
@@ -53,4 +53,5 @@ body:has(dialog[open]) {
   border-radius: 5px;
   padding: 10px 16px;
   place-self: normal;
+  height: 40px;
 }
